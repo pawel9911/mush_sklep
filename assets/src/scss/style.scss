@@ -1,0 +1,137 @@
+@import "./componets/header.scss";
+@import "./componets/navbar.scss";
+@import "./componets/ourOffer.scss";
+@import "./componets/productList.scss";
+@import "./componets/newsletter.scss";
+@import "./componets/footer.scss";
+@import "./componets/infoStore.scss";
+@import "./componets/aboutUs.scss";
+
+#breadcrumbs {
+  a {
+    color: #005c97;
+    text-decoration: none;
+  }
+}
+
+.admin-bar #searchModal .modal-dialog {
+  margin-top: 72px;
+}
+
+#searchModal .modal-dialog {
+  margin: 0;
+  margin-top: 40px;
+  max-width: none;
+  width: 100%;
+  .modal-content {
+    border-radius: 0;
+    border: none;
+  }
+}
+
+.search-engine {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  i {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+  }
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+}
+
+.btn--v1 {
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  background: linear-gradient(to right, #363795, #005c97);
+  color: #fff;
+  padding: 10px 25px;
+  font-weight: 500;
+  height: 50px;
+  border-radius: 6px;
+}
+
+.btn--v2 {
+  width: 10rem;
+  cursor: pointer;
+  border-bottom: 1px solid #5f5f5f;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: #5f5f5f;
+  position: relative;
+  transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  &.active {
+    border-bottom-width: 4px;
+    border-color: #005c97;
+    color: #005c97;
+    padding-bottom: 0.5625rem;
+    transition: none;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    transition: inherit;
+    z-index: -1;
+    top: 1px;
+    left: 50%;
+    height: 100%;
+    width: 0;
+    border-bottom: 4px solid #005c97;
+  }
+  &:not(.active):hover {
+    transition-delay: 0.5s;
+    &::before {
+      transition-delay: 0s;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+.btn-group--v1 {
+  margin-bottom: 3.5rem;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.select--v1 {
+  border: 1px solid #005c97;
+  padding: 10px 25px 10px 10px;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.input--v1 {
+  border-radius: 6px;
+  border: 1px solid #005c97;
+  padding: 10px 30px 10px 50px;
+  display: block;
+  width: 100%;
+}
+
+.input--v2 {
+  height: 50px;
+}
+
+.logo {
+  max-height: 100%;
+  width: 105px;
+  &--xl {
+    width: 200px;
+  }
+}

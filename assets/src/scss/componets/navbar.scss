@@ -1,0 +1,16 @@
+.navbar {
+  height: 90px;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link:focus,
+.nav-link:hover,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #005c97 !important;
+}
+
+.navbar-right li i {
+  font-size: 20px;
+}

@@ -1,0 +1,13 @@
+.header {
+  &__info-bar {
+    background: #f0f0f0;
+    height: 40px;
+    z-index: 1040;
+    position: relative;
+    color: #000;
+    text-align: center;
+    p {
+      vertical-align: auto;
+    }
+  }
+}

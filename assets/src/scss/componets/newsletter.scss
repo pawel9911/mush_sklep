@@ -1,0 +1,58 @@
+$font: #000;
+
+.newsletter {
+  padding: 30px 0;
+  margin-bottom: 30px;
+  background: #f0f0f0;
+  &__title {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.2em;
+    text-align: center;
+    color: $font;
+
+    margin: 20px 0;
+  }
+  &__subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    color: $font;
+    margin: 20px 0;
+  }
+  &__input,
+  &__input:focus {
+    background-color: transparent;
+    border-radius: 0;
+    color: $font;
+    border: 0px;
+    border-bottom: 1px solid;
+    border-color: $font;
+    box-shadow: none;
+    min-width: 300px;
+    padding: 10px 0;
+    &::placeholder {
+      color: $font;
+      font-size: 14px;
+    }
+  }
+  &__small {
+    font-size: 12px;
+    width: 62%;
+    text-align: center;
+    margin: 30px 0;
+    color: $font;
+    strong {
+      color: #005c97;
+    }
+  }
+  &__link {
+    color: #005c97;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &:hover {
+      color: #005c97;
+    }
+  }
+}

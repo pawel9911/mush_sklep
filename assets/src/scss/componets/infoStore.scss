@@ -1,0 +1,23 @@
+.info-store {
+  margin: 120px 0;
+  &__item {
+    text-decoration: none;
+    text-align: center;
+    color: #5f5f5f;
+    div {
+      width: 150px;
+      height: 150px;
+      border-radius: 100%;
+      background: linear-gradient(to right, #363795, #005c97);
+      position: relative;
+      margin: 20px auto;
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 50px;
+    }
+  }
+}

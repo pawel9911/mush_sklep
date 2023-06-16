@@ -1,0 +1,38 @@
+.footer {
+  &__nav {
+    color: #5f5f5f;
+    background-color: #f0f0f0;
+    &__list {
+      list-style-type: none;
+      li {
+        &:first-of-type {
+          color: #5f5f5f;
+          font-size: 16px;
+          font-weight: 700;
+          text-transform: uppercase;
+          position: relative;
+          margin-bottom: 10px;
+          padding: 10px 0;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      span {
+        display: inline-block;
+        width: 20px;
+      }
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #005c97;
+      }
+    }
+  }
+  &__copyright {
+    font-size: 14px;
+    a {
+      color: #005c97;
+    }
+  }
+}
